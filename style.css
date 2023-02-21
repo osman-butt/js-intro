@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    position: relative;
+}
+
+section div {
+    /* lille trick så vi kan se når properties ændrer sig */
+    transition: all .5s;
+}
+
+#square {
+    width: 5vw;
+    aspect-ratio: 1 / 1;
+
+    border: 3px solid green;
+    background-color: rgba(0,180,0,0.5);
+
+    position: absolute;
+    left: 10vw;
+}
+
+#circle {
+    width: 5vw;
+    aspect-ratio: 1 / 1;
+
+    border: 3px solid red;
+    background-color: rgba(255,0,0,0.5);
+
+    border-radius: 50%;
+
+    position: absolute;
+    left: 30vw;
+}
+
+/* klasser vi kan sætte på og fjerne */
+
+.tilt {
+    rotate: -15deg;
+}
+
+.size {
+    scale: .5;
+}
+
+.move {
+    translate: 0 -2.5vw;
+}
